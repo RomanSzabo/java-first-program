@@ -16,7 +16,7 @@ public class MortgageCalculator {
     }
 
     public static void main(String[] args) {
-        MortgageCalculator calculator = new MortgageCalculator(Long.parseLong(args[0]), Integer.parseInt(args[1]), Float.parseFloat(args[2]));
+        MortgageCalculator calculator = new MortgageCalculator(Utilities.getLongValue(args[0]), Utilities.getIntValue(args[1]), Utilities.getFloatValue(args[2]));
         calculator.calculateMonthlyPayment();
         System.out.println(calculator);
     }
